@@ -1,0 +1,35 @@
+.asd{
+    
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      
+      /* Bottom left text */
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+
+
+
+
+
+
+
+
+
+/*
+    width: 600px;
+    margin:20px auto;
+    background-color: rgb(7, 98, 4);
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+
+
+html{
+    background-color: #e7f081;
+}
+*/
