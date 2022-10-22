@@ -1,6 +1,6 @@
-# tsParticles Vanilla Demo
+# Particulas IDIS Demo
 
-Demo used in the tsParticles Vanilla Tutorial video
+ tsParticles Vanilla 
 
 
 
