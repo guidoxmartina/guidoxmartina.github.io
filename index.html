@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Particles</title>
+    <title>IDIS</title>
     <link  href="titulos.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -30,25 +30,42 @@
         },
         interactivity: {
           events: {
-            //onClick: {
+            onClick: {
               // this handles the mouse click event
-              //enable: true,
-              //mode: "push", // this adds particles
-            //},
+              enable: false,
+              mode: "repulse", // this adds particles
+            },
             onHover: {
               // this handles the mouse hover event
               enable: true,
-              mode: "repulse", // this make particles move away from the mouse
-            },
+              //mode: "repulse", // this make particles move away from the mouse
+              mode: "bubble", 
+              parallax: { enable: true, force: 60, smooth: 110 }
+      
+            },  
+            resize: true
           },
+
+/*
+onhover: {
+        enable: true,
+        mode: "bubble",
+        parallax: { enable: false, force: 60, smooth: 10 }
+      },
+      resize: true
+*/
+          
+
+
           modes: {
             //push: {
               //quantity: 6, // number of particles to add
             //},
+            bubble: { distance: 200, duration: 2, opacity: 1, size: 110, speed: 3 },
             repulse: {
               distance: 100, // the distance of the particles from the mouse
               duration: 0.4,
-              speed: .1
+              speed: 1
             },
           },
         },
@@ -64,16 +81,17 @@
         area: 800,
         factor: 100
       },
-      limit: 0,
-      value: 100
+      limit: 3000,
+      value: 4000 //cantidad!!!!!
     },
     //collision
           collisions: {
-      enable: true,
+      enable: false,
       mode: 'bounce',
     },
     //forma
-    
+
+    //hay aprox 30 imagenes x ahora
     shape: {
       type: "image",
     options: {
@@ -123,7 +141,7 @@
                         //direction: "bottom"
                     }}},
                     {
-                src: "https://proyectoidis.org/wp-content/uploads/2015/05/io4-210x210.gif",
+                src: "https://proyectoidis.org/wp-content/uploads/2019/10/Tsiolkovsky-4.jpeg",
                 width: 100, // this width is used only for image ratio
                 //height: 100, // this height is used only for image ratio
                 particles: { /* here you can specify all the particles options you want */
@@ -344,20 +362,20 @@
     //conexiones
           links: {
             enable: false, // this enables links between particles
-            opacity: 1,
-            distance: 500,
+            opacity: .5,
+            distance: 400,
           },
           //velocidad
           move: {
             enable: true, // this makes particles move
-            speed: { min: .2, max: .5 }, // this is the speed of the particles
+            speed: { min: .9, max: 1.5 }, // this is the speed of the particles
           },
           opacity: {
             value: { min: 1, max: 1 }, // this sets the opacity of the particles
           },
           //tama;o
           size: {
-            value: { min: 40, max: 50 }, // this sets the size of the particles
+            value: { min: 10, max: 20 }, // this sets the size of the particles
           },
         },
       };
